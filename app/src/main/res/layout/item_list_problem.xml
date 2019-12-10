@@ -39,11 +39,46 @@
             android:id="@+id/tv_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:ellipsize="end"
             android:maxEms="30"
             android:maxLines="3"
             app:layout_constraintTop_toBottomOf="@id/iv_type"
             tools:text="简要回答" />
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            tools:text="15点赞"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            app:layout_constraintLeft_toRightOf="@+id/like"
+            tools:text="7评论"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            app:layout_constraintLeft_toRightOf="@+id/review"
+            tools:text="3转发"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"/>
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>
